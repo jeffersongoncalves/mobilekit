@@ -9,18 +9,21 @@
 ## About MobileKit
 
 MobileKit is a robust starter kit built on Laravel 12.x, Filament 3.x and NativePHP 1.x, designed to accelerate the development of modern
-native desktop applications with a ready-to-use multi-panel structure.
+native desktop and mobile applications with a ready-to-use multi-panel structure.
 
 ## Features
 
 - **Laravel 12.x** - The latest version of the most elegant PHP framework
 - **Filament 3.x** - Powerful and flexible admin framework
-- **NativePHP 1.x** - Build native desktop applications with PHP
+- **NativePHP 1.x** - Build native desktop and mobile applications with PHP
 - **Multi-Panel Structure** - Includes three pre-configured panels:
     - Admin Panel (`/admin`) - For system administrators
     - App Panel (`/app`) - For authenticated application users
-    - Public Panel (frontend interface) - For visitors
+    - Guest Panel (frontend interface) - For visitors
 - **Environment Configuration** - Centralized configuration through the `config/mobilekit.php` file
+- **Testing Framework** - Pest PHP for elegant testing
+- **Code Quality Tools** - Laravel Pint for code formatting and Larastan for static analysis
+- **Development Tools** - IDE Helper, Laravel Pail for log monitoring
 
 ## System Requirements
 
@@ -97,6 +100,24 @@ php artisan native:serve
 pnpm run dev
 ```
 
+## Testing & Code Quality
+
+MobileKit includes comprehensive testing and code quality tools:
+
+``` bash
+# Run tests with Pest
+./vendor/bin/pest
+
+# Format code with Laravel Pint
+composer pint
+
+# Run static analysis with Larastan
+composer phpstan
+
+# Generate IDE helper files
+composer ide-helper
+```
+
 ## Customization
 
 ### Panel Configuration
@@ -105,7 +126,7 @@ Panels can be customized through their respective providers:
 
 - `app/Providers/Filament/AdminPanelProvider.php`
 - `app/Providers/Filament/AppPanelProvider.php`
-- `app/Providers/Filament/PublicPanelProvider.php`
+- `app/Providers/Filament/GuestPanelProvider.php`
 
 Alternatively, these settings are also consolidated in the `config/mobilekit.php` file for easier management.
 
@@ -125,15 +146,19 @@ The `config/mobilekit.php` file centralizes the configuration of the starter kit
 
 ## Resources
 
-Mobilekit includes support for:
+MobileKit includes comprehensive support for:
 
-- User and admin management
-- Multi-guard authentication system
-- Tailwind CSS integration
-- Database queue configuration
-- Customizable panel routing and branding
-- Native desktop application development with NativePHP
-- Cross-platform compatibility (Windows, macOS, Linux)
+- **User Management** - User and admin management with multi-guard authentication
+- **UI Framework** - Tailwind CSS integration with Filament components
+- **Queue System** - Database queue configuration for background processing
+- **Panel System** - Customizable panel routing and branding
+- **Desktop Development** - Native desktop application development with NativePHP
+- **Mobile Development** - Native mobile application support
+- **Cross-Platform** - Full compatibility across Windows, macOS, Linux, iOS, and Android
+- **Testing Suite** - Pest PHP testing framework with Laravel integration
+- **Code Quality** - Laravel Pint formatting and Larastan static analysis
+- **Development Tools** - IDE helpers, log monitoring with Laravel Pail
+- **Asset Management** - Vite integration for modern asset compilation
 
 ## License
 

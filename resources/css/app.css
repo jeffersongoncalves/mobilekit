@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+::-webkit-scrollbar {
+    width: .56vw;
+    height: 8px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+
+::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #ffffff;
+    /* border-radius: 81px; */
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #666666;
+}
+
+::-webkit-scrollbar-track:active {
+    background: #333333;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.fi-breadcrumbs .fi-breadcrumbs-item-label {
+    @apply text-xs;
+}
+
+.choices__item--selectable {
+    @apply cursor-pointer;
+}
+
+.fi-sidebar {
+    @apply bg-white dark:bg-gray-900 !important;
+}
+
+.fi-sidebar-item a,
+.fi-tenant-menu-trigger {
+    @apply hover:bg-gray-200/50 hover:dark:bg-gray-800 !important;
+}
+
+.fi-sidebar-item-active a {
+    @apply bg-gray-200/50 dark:bg-gray-800 !important;
+}
+
+.fi-btn-color-primary {
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(var(--primary-500), 1),
+        rgba(var(--primary-900), 1)
+    );
+    box-shadow:
+        0 4px 6px -1px #0000001a,
+        0 2px 4px -2px #0000001a;
+}
+
+.bg-primary-700-gradient {
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(var(--primary-300), 1),
+        rgba(var(--primary-700), 1)
+    );
+}
+
+.fi-btn-color-primary {
+    transition: 0.5s;
+    background-size: 200% auto;
+}
+
+.fi-btn-color-primary:hover {
+    background-position: right center; /* change the direction of the change here */
+    text-decoration: none;
+}

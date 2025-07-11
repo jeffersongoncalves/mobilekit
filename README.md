@@ -94,71 +94,16 @@ Configure your database in the .env file
 
 Run migrations
 ``` bash
-php artisan migrate
+php artisan native:migrate
 ```
 Run the server
 ``` bash
 php artisan native:serve
 ```
 
-## Mobile Development Setup
-
-### Install Mobile Platform Support
-
-Install NativePHP mobile platform support:
-
-``` bash
-# Install for both iOS and Android (macOS only for iOS)
-php artisan native:install both
-
-# Install for Android only
-php artisan native:install android
-
-# Install for iOS only (macOS only)
-php artisan native:install ios
-```
-
-### Mobile Configuration
-
-Configure your mobile app settings in the `.env` file:
-
-``` bash
-# App identification
-NATIVEPHP_APP_ID=com.yourcompany.mobilekit
-NATIVEPHP_APP_VERSION=1.0.0
-NATIVEPHP_APP_VERSION_CODE=1
-NATIVEPHP_APP_AUTHOR="Your Name"
-
-# Deep linking (optional)
-NATIVEPHP_DEEPLINK_SCHEME=mobilekit
-NATIVEPHP_DEEPLINK_HOST=yourapp.com
-
-# iOS Development Team ID (iOS only)
-NATIVEPHP_DEVELOPMENT_TEAM=YOUR_TEAM_ID
-```
-
-### Mobile Development Commands
-
-``` bash
-# Run the mobile app in development mode
-php artisan native:run
-
-# Launch Android emulator
-php artisan native:launch-emulator
-
-# Open the mobile project in IDE (Android Studio/Xcode)
-php artisan native:open-project
-
-# Package the mobile app for distribution
-php artisan native:package
-
-# Build iOS app (macOS only)
-php artisan native:build-ios-app
-```
-
 ## Authentication Structure
 
-Mobilekit comes pre-configured with a custom authentication system that supports different types of users:
+MobileKit comes pre-configured with a custom authentication system that supports different types of users:
 
 - `Admin` - For administrative panel access
 - `User` - For application panel access
@@ -168,7 +113,7 @@ Mobilekit comes pre-configured with a custom authentication system that supports
 ### Desktop Development
 
 ``` bash
-# Run the desktop development server with logs, queues and asset compilation
+# Run the development server with logs, queues and asset compilation
 composer native:dev
 
 # Or run each component separately
@@ -178,36 +123,23 @@ pnpm run dev
 
 ### Mobile Development
 
-``` bash
-# Run the mobile app in development mode
-php artisan native:run
-
-# Run with specific platform
-php artisan native:run android
-php artisan native:run ios
-
-# Launch emulator and run app
-php artisan native:launch-emulator
-php artisan native:run android
-```
-
-## Testing & Code Quality
-
-MobileKit includes comprehensive testing and code quality tools:
+For mobile application development, NativePHP Mobile provides additional commands:
 
 ``` bash
-# Run tests with Pest
-./vendor/bin/pest
+# Build for Android
+php artisan native:android
 
-# Format code with Laravel Pint
-composer pint
+# Build for iOS (macOS only)
+php artisan native:ios
 
-# Run static analysis with Larastan
-composer phpstan
-
-# Generate IDE helper files
-composer ide-helper
+# Run mobile development server
+php artisan native:serve --mobile
 ```
+
+**Mobile Development Requirements:**
+- **Android**: Android Studio and Android SDK
+- **iOS**: Xcode (macOS only) and iOS SDK
+- **Both**: Java Development Kit (JDK) 11 or higher
 
 ## Customization
 

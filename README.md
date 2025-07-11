@@ -1,14 +1,14 @@
 <div class="filament-hidden">
 
-![Mobilekit](https://raw.githubusercontent.com/jeffersongoncalves/mobilekit/3.x/art/jeffersongoncalves-mobilekit.png)
+![MobileKit](https://raw.githubusercontent.com/jeffersongoncalves/mobilekit/3.x/art/jeffersongoncalves-mobilekit.png)
 
 </div>
 
-# Mobilekit Start Kit NativePHP 1.x, Filament 3.x and Laravel 12.x
+# MobileKit Start Kit NativePHP 1.x, Filament 3.x and Laravel 12.x
 
-## About Mobilekit
+## About MobileKit
 
-Mobilekit is a robust starter kit built on Laravel 12.x, Filament 3.x and NativePHP 1.x, designed to accelerate the development of modern
+MobileKit is a robust starter kit built on Laravel 12.x, Filament 3.x and NativePHP 1.x, designed to accelerate the development of modern
 native desktop applications with a ready-to-use multi-panel structure.
 
 ## Features

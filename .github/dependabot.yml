@@ -15,7 +15,7 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
     groups:
       actions-deps:
         patterns:
@@ -27,7 +27,7 @@ updates:
     ignore:
       - dependency-name: "tailwindcss"
     schedule:
-      interval: "weekly"
+      interval: "daily"
     groups:
       actions-deps:
         patterns:
@@ -39,7 +39,7 @@ updates:
     registries:
       - composer-nativephp-composer-sh
     schedule:
-      interval: "weekly"
+      interval: "daily"
     groups:
       actions-deps:
         patterns:

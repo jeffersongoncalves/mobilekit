@@ -3225,16 +3225,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "3.9.0",
+            "version": "3.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "10d85740180ecba7896c87e06a166e0c95a0e3b6"
+                "reference": "b321dd6749f0bf7189444158a3ce785cc16d69b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/10d85740180ecba7896c87e06a166e0c95a0e3b6",
-                "reference": "10d85740180ecba7896c87e06a166e0c95a0e3b6",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/b321dd6749f0bf7189444158a3ce785cc16d69b0",
+                "reference": "b321dd6749f0bf7189444158a3ce785cc16d69b0",
                 "shasum": ""
             },
             "require": {
@@ -3252,7 +3252,7 @@
                 "graylog2/gelf-php": "^1.4.2 || ^2.0",
                 "guzzlehttp/guzzle": "^7.4.5",
                 "guzzlehttp/psr7": "^2.2",
-                "mongodb/mongodb": "^1.8",
+                "mongodb/mongodb": "^1.8 || ^2.0",
                 "php-amqplib/php-amqplib": "~2.4 || ^3",
                 "php-console/php-console": "^3.1.8",
                 "phpstan/phpstan": "^2",
@@ -3312,7 +3312,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/3.9.0"
+                "source": "https://github.com/Seldaek/monolog/tree/3.10.0"
             },
             "funding": [
                 {
@@ -3324,16 +3324,16 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-03-24T10:02:05+00:00"
+            "time": "2026-01-02T08:56:05+00:00"
         },
         {
             "name": "nativephp/mobile",
-            "version": "2.3.0",
+            "version": "2.4.0",
             "dist": {
                 "type": "zip",
-                "url": "https://nativephp.composer.sh/download/a0a686b3-e3b3-4215-b251-80c3cd1e15f8/nativephp-2.3.0.zip",
-                "reference": "e6618043c215e99eb126295458fa364cc28ecd1d",
-                "shasum": "edeeb9d43c7972ce818a8194a707836600fd4cb0"
+                "url": "https://nativephp.composer.sh/download/a0c41f15-f544-4781-a189-4914b910e5e1/nativephp-2.4.0.zip",
+                "reference": "ae87f2a7029e4d2fac2d07bd3fe21245d27fccdc",
+                "shasum": "98f18d02d0cf6c358f36ab67026696011ae73521"
             },
             "require": {
                 "ext-dom": "*",
@@ -3421,7 +3421,7 @@
                 "laravel",
                 "nativephp"
             ],
-            "time": "2025-12-22T02:34:10+00:00"
+            "time": "2026-01-05T19:39:16+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -11584,5 +11584,5 @@
         "ext-pcntl": "7.1",
         "ext-posix": "7.1"
     },
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.6.0"
 }

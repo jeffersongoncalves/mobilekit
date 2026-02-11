@@ -27,7 +27,7 @@
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
         "livewire/livewire": "^3.6",
-        "nativephp/mobile": "^2.1"
+        "nativephp/mobile": "^3.0"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.5",
@@ -121,11 +121,5 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://nativephp.composer.sh"
-        }
-    ]
+    "prefer-stable": true
 }

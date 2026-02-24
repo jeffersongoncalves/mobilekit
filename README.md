@@ -57,6 +57,16 @@ Clone the repository
 laravel new my-app --using=jeffersongoncalves/mobilekit
 ```
 
+### Using FilaKit CLI
+
+Or use [FilaKit CLI](https://github.com/jeffersongoncalves/filakit-cli) for a simplified setup:
+
+```bash
+filakit new my-app --kit=jeffersongoncalves/mobilekit
+```
+
+> Install FilaKit CLI: `composer global require jeffersongoncalves/filakit-cli`
+
 ###  Easy Installation
 
 Mobilekit can be easily installed using the following command:

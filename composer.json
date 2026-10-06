@@ -2,7 +2,7 @@
     "$schema": "https://getcomposer.org/schema.json",
     "name": "jeffersongoncalves/mobilekit",
     "type": "project",
-    "description": "MobileKit starter kit built on Laravel 12.x, Filament 3.x and NativePHP for native mobile applications.",
+    "description": "MobileKit starter kit built on Laravel 13.x, Filament 3.x and NativePHP for native mobile applications.",
     "keywords": [
         "laravel-starter-kit",
         "starter-kit",

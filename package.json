@@ -6,16 +6,6 @@
         "build": "vite build",
         "dev": "vite"
     },
-    "pnpm": {
-        "overrides": {
-            "rollup": ">=4.59.0",
-            "yaml": ">=2.8.3",
-            "minimatch": ">=9.0.6",
-            "glob": ">=11.0.0",
-            "brace-expansion": ">=2.0.3",
-            "picomatch": ">=2.3.2"
-        }
-    },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.11",
         "@tailwindcss/typography": "^0.5.20",

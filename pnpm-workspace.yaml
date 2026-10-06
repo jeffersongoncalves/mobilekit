@@ -7,6 +7,7 @@ overrides:
   picomatch: '>=2.3.2'
   shell-quote: '>=1.11.0'
   postcss-selector-parser: '>=7.1.6'
+  source-map-js: '>=1.2.2'
 
 allowBuilds:
   esbuild: true
